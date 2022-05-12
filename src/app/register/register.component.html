@@ -15,6 +15,7 @@
     <div *ngIf="registerForm.get('password').hasError('minlength')" class="invalid-feedback">Password must be atleast 8 characters</div>
     <div *ngIf="registerForm.get('password').hasError('maxlength')" class="invalid-feedback">Password must be atmost 12 characters</div>
   </div>
+
   <!-- <div class="form-group">
     <input type="password" class="form-control" formControlName="confirmPassword" placeholder="Confirm Password"
     [class.is-invalid] = 'registerForm.get("confirmPassword").errors && registerForm.get("confirmPassword").touched'>
